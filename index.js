@@ -28,6 +28,8 @@ app.get("/gq/:category", (req, res) => {
 });
 
 
-app.listen( 9000, () => {
-    console.log("Server Ready @ 9000");
+const PORT = process.env.PORT || 9000;
+app.listen(PORT, () => {
+  console.log(`Server Ready @ ${PORT}`);
 });
+
